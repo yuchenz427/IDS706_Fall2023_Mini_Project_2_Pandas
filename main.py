@@ -5,5 +5,4 @@ def data_filter(df):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv("./grades.csv")
-    print(data_filter(df))
+    print(data_filter(pd.read_csv("./grades.csv")))
