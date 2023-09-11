@@ -1,12 +1,9 @@
-"""
-Main code
-"""
+import pandas as pd
 
-
-def add(a, b):
-    return a + b
+def data_filter(df):
+    return df[df[" \"Test3\""] >= 80]
 
 
 if __name__ == "__main__":
-    result = add(2, 4)
-    print(f"The result of adding 2 and 4 is {result}")
+    df = pd.read_csv("./grades.csv")
+    print(data_filter(df))
