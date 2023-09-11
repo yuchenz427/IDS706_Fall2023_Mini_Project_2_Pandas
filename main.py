@@ -10,3 +10,9 @@ if __name__ == "__main__":
     print(data_filter(dataframe))
     plt.scatter(dataframe["Last name"], dataframe[" \"Test3\""])
     plt.savefig("data_visualization.png")
+    
+    # calculate statistics
+    series = dataframe[" \"Test3\""]
+    print("Mean: ", series.mean())
+    print("Median: ", series.median())
+    print("Standard Deviation: ", series.std())

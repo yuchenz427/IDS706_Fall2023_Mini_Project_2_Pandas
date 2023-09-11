@@ -1,28 +1,12 @@
 [![CI](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/cicd.yml/badge.svg)](https://github.com/yuchenz427/IDS706-Python-Template/actions/workflows/cicd.yml)
-# IDS706-Python-Template
+# IDS706_Fall2023_Mini_Project_2_Pandas
 
-Python template repo for Fall 2023 IDS_706-Data Engineering Systems at Duke Univ. 
+Week 2 Mini Project: Pandas Descriptive Statistics Script
 
 It contains:
 
-- ``.devcontainer`` includes a `Dockerfile` that specifies the configurations of container, and a `devcontainer.json` which is a configuration file used in the context of Visual Studio Code
+- ``grades.csv`` a sample csv file including some grades info for students
 
-- ``workflows`` includes `GitHub Actions`, enables automated build, test and deployment for the project
+- ``main.py`` reads ``grades.csv`` as input dataset, filters the data based on one of the fieids, calculate summary statistics and create data visualization
 
-- ``Makefile`` specifies build automation on Linux
-
-- ``requirements.txt`` lists the dependencies, libraries, and specific versions of Python packages required for the project
-
-It also includes ``main.py`` and ``test_main.py`` as sample files to show the functionality of the CI pipeline.
-
-## Github Actions Demo
-
-`Github Actions` is configured to kick off workflows with Github events. Below shows some samples:
-
-![img](./demo_img/demo_make_install.png)
-
-![img](./demo_img/demo_make_test.png)
-
-![img](./demo_img/demo_make_format.png)
-
-![img](./demo_img/demo_make_lint.png)
+- ``data_visualization.png`` the data visualization created by ``main.py`` from ``matplotlib.pyplot``
